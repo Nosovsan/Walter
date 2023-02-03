@@ -1,5 +1,9 @@
+import requests
+
+
 def get_data():
-    pass
+    rec = requests.get("https://www.walter-tools.com/ru-ru/tools/standard-tools")
+    print(rec.status_code)
 
 
 def get_url():
@@ -7,7 +11,7 @@ def get_url():
 
 
 def main():
-    pass
+    get_data()
 
 
 if __name__ == "__main__":
